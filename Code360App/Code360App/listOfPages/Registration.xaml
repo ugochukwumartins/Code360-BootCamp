@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Code360App.listOfPages.Registration"
+             BackgroundImageSource="bgimg.jpeg"
+                NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lists" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label  Text="{Binding Option1}" TextColor="Black"/>
+                                <Label  Text="{Binding Option2}" TextColor="Black"/>
+                                <Label  Text="{Binding Option3}" TextColor="Black"/>
+                                <Label  Text="{Binding Option4}" TextColor="Black"/>
+                                <Label  Text="{Binding Answer}" TextColor="Black"/>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!--<StackLayout>
+                <Frame CornerRadius="20" Margin="10,5,10,0">
+                <StackLayout  BackgroundColor="White" Padding="0,0,0,10">
+                        <Entry Placeholder="Name" Margin="20" Text="{Binding Name}"  />
+                        <Entry Placeholder="Email" Margin="20" Text="{Binding Email}"/>
+                        <Entry Placeholder="LastName" Margin="20" Text="{Binding LastName}"/>
+                     
+                    <Entry Placeholder="Password" Margin="20"  Text="{Binding Password}" IsPassword="True"/>
+                </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <Button Text="REGISTER" BackgroundColor="#e4b527"  CornerRadius="20" TextColor="White"  FontFamily="FiraSans-Black.ttf#FiraSans-Black"
+                    Margin="10,80,10,0" Command="{Binding command}"/>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

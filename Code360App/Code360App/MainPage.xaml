@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Code360App.MainPage"
+             BackgroundImageSource="RAEA.png"
+             NavigationPage.HasNavigationBar="False">
+   
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Image Source="Code360Logo13042d.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,90,0,0"/>
+      
+        <StackLayout  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+        <Label Text="Welcome " 
+           HorizontalOptions="Center" FontSize="Title" TextColor="White"
+           />
+        <Label Text="to Code360" 
+           HorizontalOptions="Center" FontSize="Title" TextColor="White"
+            />
+        <Label Text="The best coding app to learn and let's get started" TextColor="White" FontSize="Body"/>
+            <Button Text="LOGIN" BackgroundColor="#e9b828" Margin="10" CornerRadius="20" Command="{Binding commands}" TextColor="White"  FontFamily="FiraSans-Black.ttf#FiraSans-Black"/>
+    </StackLayout>
+    </StackLayout>
+
+</ContentPage>

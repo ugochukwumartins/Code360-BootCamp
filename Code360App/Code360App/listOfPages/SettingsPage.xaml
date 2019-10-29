@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Code360App.listOfPages.SettingsPage"
+             Title="Settings"
+             BackgroundImageSource="bg.jpeg"
+            >
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Test"  Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"/>
+            <Entry Placeholder="Tolerance Value" Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White" />
+            <DatePicker  Margin="10,0,20,0"/>
+            <StackLayout Orientation="Horizontal" Margin="10,0,20,0">
+                <Label Text="Number Of Questions" TextColor="White" />
+                <Picker x:Name="QuestionP"  Margin="0,-20,0,9" WidthRequest="60" TextColor="White" />
+               
+            </StackLayout>
+
+            <Entry Placeholder="Performance Percentage"  Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Code360App.listOfPages.CreateQuestionPage"
+             BackgroundColor="#e4b527">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Editor Placeholder="Add Question" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
+            </StackLayout>
+            <Entry x:Name="QuestionA" Placeholder="OptionA" PlaceholderColor="White" Margin="20,0,20,0" TextColor="White"/>
+            <Entry x:Name="QuestionB" Placeholder="OptionB" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="QuestionC" Placeholder="OptionC" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="QuestionD" Placeholder="OptionD" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="Answer" Placeholder="Answer" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
+
+
+            <!--<Button Text="Add" Clicked="Add_Clicked"/>
+            <Button Text="Delete" Clicked="Delete_Clicked_1"/>-->
+            <Button Text="ADD" Clicked="Button_Clicked"  Margin="20,0,20,0" TextColor="White" CornerRadius="20" BackgroundColor="DarkBlue" BorderColor="Blue"/>
+            <Button Text="EDIT" Margin="20,0,20,0" TextColor="White" CornerRadius="20" BackgroundColor="Blue" BorderColor="Black" Clicked="Button_Clicked_1"/>
+            <ListView x:Name="lists" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label  Text="{Binding Option1}" TextColor="White"/>
+                                <Label  Text="{Binding Option2}" TextColor="White"/>
+                                <Label  Text="{Binding Option3}" TextColor="White"/>
+                                <Label  Text="{Binding Option4}" TextColor="White"/>
+                                <Label  Text="{Binding Answer}" TextColor="White"/>
+                            </StackLayout>
+                           
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

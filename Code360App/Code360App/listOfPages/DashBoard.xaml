@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Code360App.listOfPages.DashBoard"
+             BackgroundImageSource="bgimg.jpeg"
+             BackgroundColor="#e9b828">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="30,30,0,0">
+                <Label Text="CODE 360 LMS" TextColor="White"/>
+                <Label Text="DASHBORD" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="40,130,0,0">
+                <Frame CornerRadius="20" HeightRequest="90" WidthRequest="120">
+                <StackLayout BackgroundColor="White" Margin="10,0,0,0" HorizontalOptions="Center">
+                        <Label Text="200" FontSize="50" FontAttributes="Bold" />
+                        <Label Text="STUDENTS"  FontSize="20" FontAttributes="Bold"/>
+                </StackLayout>
+                </Frame>
+
+                <Frame Margin="0,0,0,0" CornerRadius="20" HeightRequest="90" WidthRequest="120">
+                    <StackLayout BackgroundColor="White" Margin="20,0,0,0"  HorizontalOptions="Center">
+                        <Label Text="20" FontSize="50" FontAttributes="Bold"/>
+                        <Label Text="COURSES" FontSize="20" FontAttributes="Bold"/>
+                </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout   Margin="0,30,10,0">
+            <Button Text="STUDENTS" BackgroundColor="#e9b828"  CornerRadius="20"
+                    Margin="10,10,10,10"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black" Command="{Binding command}"/>
+            <Button Text="COURSES" BackgroundColor="#e9b828"  CornerRadius="20"
+                    Margin="10,0,10,10"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black"/>
+            <Button Text="SETTINGS" BackgroundColor="#e9b828"  CornerRadius="20"
+                    Margin="10,0,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black"/>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
