@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -22,6 +23,7 @@ namespace Code360App.Models
 
 
       [JsonProperty("id")]
+      [PrimaryKey, AutoIncrement]
         public int Id {
             get { return id; }
             set { id= value; }

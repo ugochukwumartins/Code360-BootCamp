@@ -17,6 +17,6 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstand
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstandard2.0\listOfPages\EditQuestionsById.xaml.g.cs
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstandard2.0\listOfPages\GetAllQuestions.xaml.g.cs
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstandard2.0\listOfPages\DashBoard.xaml.g.cs
-C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstandard2.0\Code360App.csprojAssemblyReference.cache
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstandard2.0\listOfPages\CreatingCourses.xaml.g.cs
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App\obj\Debug\netstandard2.0\XamlC.stamp

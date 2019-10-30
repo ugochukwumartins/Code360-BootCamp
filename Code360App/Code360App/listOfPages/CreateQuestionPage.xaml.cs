@@ -1,5 +1,6 @@
 ﻿using Code360App.Models;
 using Newtonsoft.Json;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -19,7 +20,7 @@ namespace Code360App.listOfPages
         // private const string Url = "https://jsonplaceholder.typicode.com/posts";
         // private HttpClient _client = new HttpClient();
         // public ObservableCollection<Post> detail;
-        public ObservableCollection<GetAllQuestionsClass> detail = new ObservableCollection<GetAllQuestionsClass>();
+        public ObservableCollection<GetAllQuestionsClass> detail;//= new ObservableCollection<GetAllQuestionsClass>();
 
         int id = 1;
 
@@ -31,19 +32,42 @@ namespace Code360App.listOfPages
             BindingContext = new GetAllQuestions();
           
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))
+            {
+                datab.CreateTable<GetAllQuestionsClass>();
+                //datab.Insert(Dayly);
+                var j = datab.Table<GetAllQuestionsClass>().ToList();
+                detail = new ObservableCollection<GetAllQuestionsClass>(j);
+                lists.ItemsSource = detail;
+            }
 
+
+        }
         private void Button_Clicked(object sender, EventArgs e)
         {
             var increase = id++;
 
-            
 
 
-            detail.Add(new GetAllQuestionsClass { Option1 = QuestionA.Text, Option2 = QuestionB.Text, Option3 = QuestionC.Text,
-                Option4 = QuestionD.Text, Answer = Answer.Text, Id = increase });
+
+            var Add= new GetAllQuestionsClass (){ Option1 = QuestionA.Text, Option2 = QuestionB.Text, Option3 = QuestionC.Text,
+                Option4 = QuestionD.Text, Answer = Answer.Text, Id = increase };
            
-            lists.ItemsSource = detail;
-           MessagingCenter.Send(this,"ok", detail);
+         
+            using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))
+            {
+                datab.CreateTable<GetAllQuestionsClass>();
+             
+               
+               int x=     datab.Insert(Add);
+                detail.Add(Add);
+               
+            }
+           
+            MessagingCenter.Send(this,"ok", detail);
            
         }
 

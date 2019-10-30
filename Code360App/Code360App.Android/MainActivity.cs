@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.IO;
 
 namespace Code360App.Droid
 {
@@ -21,7 +22,10 @@ namespace Code360App.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+            string fileName = "contact_db.db3";
+            string filePath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string CompletePath = Path.Combine(filePath, fileName);
+          LoadApplication(new App(CompletePath));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
