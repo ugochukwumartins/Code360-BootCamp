@@ -17,11 +17,11 @@ namespace Code360App.listOfPages
         public Registration()
         {
             InitializeComponent();
-            BindingContext = new CreateQuestionPage();
-            MessagingCenter.Subscribe<CreateQuestionPage, ObservableCollection<GetAllQuestionsClass>>(this,"ok", (s, a) =>
-             {
-                 lists.ItemsSource = a;
-             });
+            BindingContext = new GetAllQuestionsClass();
+            MessagingCenter.Subscribe<CreateQuestionPage,ObservableCollection<GetAllQuestionsClass>>(this, "ok", (s, a) =>
+            {
+                lists.ItemsSource = a;
+            });
         }
 
     }
