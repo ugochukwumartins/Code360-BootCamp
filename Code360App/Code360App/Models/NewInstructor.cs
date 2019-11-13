@@ -1,14 +1,16 @@
 ﻿using Newtonsoft.Json;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Code360App.Models
 {
-    class NewInstructor
+   public class NewInstructors
     {
 
         [JsonProperty("id")]
+        [AutoIncrement]
         public int Id { get; set; }
 
         [JsonProperty("name")]

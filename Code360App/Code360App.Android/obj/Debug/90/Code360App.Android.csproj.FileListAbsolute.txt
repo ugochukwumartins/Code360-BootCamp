@@ -616,3 +616,12 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_green.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\System.Threading.Tasks.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ScrollLayoutManager.java
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Behaviors.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\XamarinFastEntry.Behaviors.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\System.ObjectModel.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Behaviors.pdb
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Behaviors.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Behaviors.pdb
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\System.ObjectModel.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\XamarinFastEntry.Behaviors.dll

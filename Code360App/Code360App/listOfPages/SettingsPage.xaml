@@ -10,16 +10,34 @@
             >
     <ContentPage.Content>
         <StackLayout>
-            <Entry Placeholder="Test"  Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"/>
-            <Entry Placeholder="Tolerance Value" Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White" />
-            <DatePicker  Margin="10,0,20,0"/>
+            <Entry Placeholder="TestMark"  Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"  x:Name="TestMark"/>
+            <Entry Placeholder="Tolerance Value" Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White" x:Name="Tolerance" />
+            <DatePicker  Margin="10,0,20,0" x:Name="DateT"/>
             <StackLayout Orientation="Horizontal" Margin="10,0,20,0">
-                <Label Text="Number Of Questions" TextColor="White" />
-                <Picker x:Name="QuestionP"  Margin="0,-20,0,9" WidthRequest="60" TextColor="White" />
-               
+                <Entry Keyboard="Numeric" Placeholder="Number Of Questions" x:Name="Questons"/>
             </StackLayout>
 
-            <Entry Placeholder="Performance Percentage"  Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"/>
+            <Entry Placeholder="Performance Percentage"  Margin="10,0,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White" x:Name="PerformancePercent" />
+            <Button Text="Save" BackgroundColor="#e9b828"  CornerRadius="20"  Clicked="Save_Clicked" />
+
+
+            <ListView x:Name="setinglist" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label  Text="{Binding TestPassPercentage}" TextColor="Black"/>
+                <Label  Text="{Binding TestTolerancePercentage }" TextColor="Black"/>
+                                <Label  Text="{Binding PreworkDate}" TextColor="Black"/>
+                <Label  Text="{Binding QuestionsNumber}" TextColor="Black"/>
+                <Label  Text="{Binding PerformancePercentage}" TextColor="Black"/>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

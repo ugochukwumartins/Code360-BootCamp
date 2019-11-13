@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Code360App.listOfPages.CreatingCourses"
+             BackgroundImageSource="bgimg.jpeg">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="10,30,10,0">
+                <Entry Placeholder="Title"  PlaceholderColor="White" x:Name="title" />
+                <Entry Placeholder="InstructorsId" x:Name="instructorsId" Keyboard="Numeric" PlaceholderColor="White" />
+                <Entry Placeholder="Duration" x:Name="duration"  PlaceholderColor="White"/>
+                <Entry Placeholder="Cost"  x:Name="cost"  PlaceholderColor="White" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Save"  BackgroundColor="BlueViolet"  CornerRadius="20"  Margin="10,90,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black" Clicked="Button_Clicked"/>
+            
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

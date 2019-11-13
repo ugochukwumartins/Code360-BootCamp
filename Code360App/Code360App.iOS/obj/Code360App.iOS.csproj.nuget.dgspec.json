@@ -42,17 +42,27 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2019.1.3, )"
+            },
+            "JetBrains.ReSharper.CommandLineTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2019.3.0-eap03, )"
+            },
             "Microsoft.Net.Http": {
               "target": "Package",
               "version": "[2.2.29, )"
             },
             "Microsoft.SqlServer.SqlManagementObjects": {
               "target": "Package",
-              "version": "[150.18178.0, )"
+              "version": "[150.18208.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3-beta2, )"
+              "version": "[12.0.3, )"
             },
             "Plugin.RestClient": {
               "target": "Package",
@@ -72,7 +82,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.947036, )"
+              "version": "[4.4.0.936621-pre1, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -132,13 +142,31 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Behaviors.Forms": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Behaviors.XamarinForms": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2019.1.3, )"
+            },
+            "JetBrains.ReSharper.CommandLineTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2019.3.0-eap03, )"
+            },
             "Microsoft.Net.Http": {
               "target": "Package",
               "version": "[2.2.29, )"
             },
             "Microsoft.SqlServer.SqlManagementObjects": {
               "target": "Package",
-              "version": "[150.18178.0, )"
+              "version": "[150.18208.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -148,7 +176,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3-beta2, )"
+              "version": "[12.0.3, )"
             },
             "Plugin.RestClient": {
               "target": "Package",
@@ -160,7 +188,7 @@
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[4.7.0-preview1.19504.10, )"
+              "version": "[4.7.0-preview2.19523.17, )"
             },
             "System.ObjectModel": {
               "target": "Package",
@@ -176,7 +204,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.947036, )"
+              "version": "[4.4.0.936621-pre1, )"
+            },
+            "XamarinFastEntry.Behaviors": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

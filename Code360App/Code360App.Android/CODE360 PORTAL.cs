@@ -5,6 +5,7 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -15,7 +16,8 @@ namespace Code360App.Droid
     [Activity(Label = "CODE360_PORTAL",
         Theme = "@style/Theme.Splash",
         MainLauncher = true,
-        NoHistory = true
+        NoHistory = true,
+      ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait
         )]
     public class CODE360_PORTAL : Activity
     {

@@ -22,22 +22,7 @@
             <Button Text="Delete" Clicked="Delete_Clicked_1"/>-->
             <Button Text="ADD" Clicked="Button_Clicked"  Margin="20,0,20,0" TextColor="White" CornerRadius="20" BackgroundColor="DarkBlue" BorderColor="Blue"/>
             <Button Text="EDIT" Margin="20,0,20,0" TextColor="White" CornerRadius="20" BackgroundColor="Blue" BorderColor="Black" Clicked="Button_Clicked_1"/>
-            <ListView x:Name="lists" HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout>
-                                <Label  Text="{Binding Option1}" TextColor="White"/>
-                                <Label  Text="{Binding Option2}" TextColor="White"/>
-                                <Label  Text="{Binding Option3}" TextColor="White"/>
-                                <Label  Text="{Binding Option4}" TextColor="White"/>
-                                <Label  Text="{Binding Answer}" TextColor="White"/>
-                            </StackLayout>
-                           
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

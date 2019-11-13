@@ -21,13 +21,16 @@ namespace Code360App.listOfPages
             Allpage = new List<Pages>()
             {
                 new Pages{ Title= "DashBoard", Icon="", TypeOf= typeof(DashBoard)},
-                new Pages{ Title= "Profile", Icon="", TypeOf= typeof(SettingsPage)},
-                new Pages{ Title= "Students", Icon="", TypeOf= typeof(CreateQuestionPage)},
-                new Pages{ Title= "Courses", Icon="", TypeOf= typeof(SettingsPage)},
-                new Pages{ Title= "Settings", Icon="", TypeOf= typeof(SettingsPage)}
+               new Pages{ Title= "Instructor", Icon="", TypeOf= typeof(InstructorTapedPage)},
+              //  new Pages{ Title= "Students", Icon="", TypeOf= typeof(CreateQuestionPage)},
+                new Pages{ Title= "Courses", Icon="", TypeOf= typeof(MasterDetailOfCourses)},
+             
+                new Pages{ Title= "Settings", Icon="", TypeOf= typeof(SettingsPage)},
+
+                   new Pages{ Title= "Questions", Icon="", TypeOf= typeof(QuestionTapPage)},
             };
             lists.ItemsSource = Allpage;
-            listss.ItemsSource = Allpage;
+           // listss.ItemsSource = Allpage;
         }
 
         private void lists_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -37,6 +40,10 @@ namespace Code360App.listOfPages
             Detail = new NavigationPage((Page)Activator.CreateInstance(page));
             IsPresented = false;
 
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            return false;
         }
     }
 }

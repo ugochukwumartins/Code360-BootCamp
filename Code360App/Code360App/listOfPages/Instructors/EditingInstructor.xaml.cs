@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Code360App.listOfPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GetAllQuestions : ContentPage
+    public partial class EditingInstructor : ContentPage
     {
-        public GetAllQuestions()
+        public EditingInstructor()
         {
             InitializeComponent();
         }

@@ -29,23 +29,23 @@ namespace Code360App.listOfPages
             InitializeComponent();
             // BindingContext = new Post();
          
-            BindingContext = new GetAllQuestions();
+          ///  BindingContext = new GetAllQuestions();
           
         }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))
-            {
-                datab.CreateTable<GetAllQuestionsClass>();
-                //datab.Insert(Dayly);
-                var j = datab.Table<GetAllQuestionsClass>().ToList();
-                detail = new ObservableCollection<GetAllQuestionsClass>(j);
-                lists.ItemsSource = detail;
-            }
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))
+        //    {
+        //        datab.CreateTable<GetAllQuestionsClass>();
+        //        //datab.Insert(Dayly);
+        //        var j = datab.Table<GetAllQuestionsClass>().ToList();
+        //        detail = new ObservableCollection<GetAllQuestionsClass>(j);
+        //       // lists.ItemsSource = detail;
+        //    }
 
 
-        }
+        //}
         private void Button_Clicked(object sender, EventArgs e)
         {
             var increase = id++;
@@ -57,18 +57,19 @@ namespace Code360App.listOfPages
                 Option4 = QuestionD.Text, Answer = Answer.Text, Id = increase };
            
          
-            using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))
-            {
-                datab.CreateTable<GetAllQuestionsClass>();
+            //using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))
+            //{
+            //    datab.CreateTable<GetAllQuestionsClass>();
              
                
-               int x=     datab.Insert(Add);
-                detail.Add(Add);
+            //   int x=     datab.Insert(Add);
+            //    detail.Add(Add);
                
-            }
+            //}
            
-            MessagingCenter.Send(this,"ok", detail);
-           
+            MessagingCenter.Send(this,"Good", Add);
+            Navigation.PopModalAsync();
+
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)

@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Code360App.Android.dll" comes first in this list. */
 		"Code360App.Android.dll",
+		"Behaviors.dll",
 		"Code360App.dll",
 		"FormsViewGroup.dll",
 		"ImageCircle.Forms.Plugin.dll",
@@ -79,6 +80,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"XamarinFastEntry.Behaviors.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

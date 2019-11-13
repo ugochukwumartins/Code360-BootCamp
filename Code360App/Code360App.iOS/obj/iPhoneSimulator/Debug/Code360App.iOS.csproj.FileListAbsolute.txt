@@ -81,3 +81,13 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimu
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.pdb
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\SQLite.Net.Platform.XamarinIOS.Unified.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\SQLite.Net.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\Behaviors.pdb
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\Behaviors.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\XamarinFastEntry.Behaviors.dll

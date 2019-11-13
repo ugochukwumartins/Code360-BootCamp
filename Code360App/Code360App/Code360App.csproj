@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,45 +6,80 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Behaviors.Forms" Version="1.4.0" />
+    <PackageReference Include="Behaviors.XamarinForms" Version="4.0.4" />
+    <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
+    <PackageReference Include="JetBrains.ReSharper.CommandLineTools" Version="2019.3.0-eap03">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
-    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="150.18178.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3-beta2" />
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="150.18208.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Plugin.RestClient" Version="1.1.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="SQLite.Net-PCL" Version="3.1.1" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0-preview1.19504.10" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0-preview2.19523.17" />
     <PackageReference Include="System.ObjectModel" Version="4.3.0" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.1.1.1-beta" />
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.936621-pre1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="XamarinFastEntry.Behaviors" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="listOfPages\CreatingCourses.xaml.cs">
+    <Compile Update="listOfPages\Courses\CreatingCourses.xaml.cs">
       <DependentUpon>CreatingCourses.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="listOfPages\Courses\TapedPagesOfCourses.xaml.cs">
+      <DependentUpon>TapedPagesOfCourses.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="listOfPages\CreateQuestionPage.xaml">
+    <EmbeddedResource Update="listOfPages\Courses\DetailsOfAllCourses.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Questions\CreateQuestionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="listOfPages\DashBoard.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="listOfPages\EditQuestionsById.xaml">
+    <EmbeddedResource Update="listOfPages\Courses\EdithCourse.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="listOfPages\GetAllQuestions.xaml">
+    <EmbeddedResource Update="listOfPages\Instructors\DetailOfAllinstructor.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="listOfPages\CreatingCourses.xaml">
+    <EmbeddedResource Update="listOfPages\Instructors\EditingInstructor.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Questions\EditQuestionsById.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Questions\GetAllQuestions.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Courses\CreatingCourses.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Instructors\InstructorTapedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="listOfPages\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Courses\TapedPagesOfCourses.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="listOfPages\MasterPagesAll.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Instructors\NewInstructor.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfPages\Questions\QuestionTapPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="listOfPages\Registration.xaml">

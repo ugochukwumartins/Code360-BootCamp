@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Code360App.listOfPages.NewInstructor"
+             BackgroundImageSource="bgimg.jpeg"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="10,50,10,0">
+            <Entry Placeholder="Name" x:Name="name" PlaceholderColor="White" />
+            <Entry Placeholder="Email" x:Name="email" PlaceholderColor="White" Keyboard="Email" />
+            <Entry Placeholder="Password" x:Name="password" PlaceholderColor="White" IsPassword="True"/>
+            </StackLayout>
+            <StackLayout Margin="10,90,10,0">
+            <Button Text="Save" Clicked="Save_Clicked" CornerRadius="20"  BackgroundColor="BlueViolet"/>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

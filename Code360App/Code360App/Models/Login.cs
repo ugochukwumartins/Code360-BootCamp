@@ -15,8 +15,8 @@ namespace Code360App.Models
 
    public class Login
     {
-        private const string Url = "http://unionfaith.westeurope.cloudapp.azure.com:3600/api/Account/Login";
-        private HttpClient _client = new HttpClient();
+    //  private const string Url = "http://unionfaith.westeurope.cloudapp.azure.com:3600/api/Account/Login";
+    //  private HttpClient _client = new HttpClient();
 
 
 
@@ -51,22 +51,23 @@ namespace Code360App.Models
             // var x=  new Post { Id = id.Text, Title = title.Text, Body = body.Text };
             //   de//  detail.Insert(0, p);
             // var u = JsonConvert.SerializeObject(p);
-            //  await _client.PostAsync(Url, new StringContent(u));
+            // await _client.PostAsync(Url, new StringContent(u));
 
            
             if (username != null && username != "" && username.Length >=6) {
                 if (password != null && password != "" && password.Length >=6) {
-                    var p = new LoginClassDetail { Username = username, Password = password };
-                    var x = JsonConvert.SerializeObject(p);
-                var u=  await _client.PostAsync(Url, new StringContent(x));
-                    if (u.IsSuccessStatusCode == true) { 
+              //    var p = new LoginClassDetail { Username = username, Password = password };
+               //  var x = JsonConvert.SerializeObject(p);
+              //    var u = await _client.PostAsync(Url, new StringContent(x, Encoding.UTF8, "application/json");
+             //     var bbb = u.StatusCode;
+              //    if (u.IsSuccessStatusCode == true) { 
                     await Application.Current.MainPage.DisplayAlert(null, "successful", "ok");
                     await Navigation.PushAsync(new MasterPagesAll());
-                    }
-                    else
-                    {
-                        await Application.Current.MainPage.DisplayAlert(null, "unsuccessful", "ok");
-                    }
+               //  }
+              //    else
+              //    {
+              //       await Application.Current.MainPage.DisplayAlert(null, "unsuccessful", "ok");
+              //    }
                     username = null;
                     password = null;
                 }
