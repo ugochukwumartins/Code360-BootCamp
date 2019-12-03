@@ -23,7 +23,6 @@ namespace Code360App.Models
 
 
       [JsonProperty("id")]
-      [PrimaryKey, AutoIncrement]
         public int Id {
             get { return id; }
             set { id= value; }

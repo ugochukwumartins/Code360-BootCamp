@@ -50,7 +50,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2019.3.0-eap03, )"
+              "version": "[2019.3.0-eap07, )"
             },
             "Microsoft.Net.Http": {
               "target": "Package",
@@ -82,7 +82,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.4.0.936621-pre1, )"
+              "version": "[4.4.0.991210-pre2, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
+              "target": "Package",
+              "version": "[4.4.0.991210-pre2, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -158,7 +162,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2019.3.0-eap03, )"
+              "version": "[2019.3.0-eap07, )"
             },
             "Microsoft.Net.Http": {
               "target": "Package",
@@ -188,7 +192,7 @@
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[4.7.0-preview2.19523.17, )"
+              "version": "[4.7.0, )"
             },
             "System.ObjectModel": {
               "target": "Package",
@@ -204,7 +208,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.4.0.936621-pre1, )"
+              "version": "[4.4.0.991210-pre2, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
+              "target": "Package",
+              "version": "[4.4.0.991210-pre2, )"
             },
             "XamarinFastEntry.Behaviors": {
               "target": "Package",

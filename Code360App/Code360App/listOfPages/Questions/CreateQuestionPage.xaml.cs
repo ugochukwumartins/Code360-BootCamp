@@ -22,7 +22,7 @@ namespace Code360App.listOfPages
         // public ObservableCollection<Post> detail;
         public ObservableCollection<GetAllQuestionsClass> detail;//= new ObservableCollection<GetAllQuestionsClass>();
 
-        int id = 1;
+        int  increase =1;
 
         public CreateQuestionPage()
         {
@@ -48,13 +48,14 @@ namespace Code360App.listOfPages
         //}
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var increase = id++;
+             increase ++;
 
 
 
 
             var Add= new GetAllQuestionsClass (){ Option1 = QuestionA.Text, Option2 = QuestionB.Text, Option3 = QuestionC.Text,
-                Option4 = QuestionD.Text, Answer = Answer.Text, Id = increase };
+                Option4 = QuestionD.Text, Answer = Answer.Text, Id = increase
+            };
            
          
             //using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))

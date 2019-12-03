@@ -4,6 +4,7 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\ImageCircle.Forms.Plugin.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Java.Interop.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\JetBrains.Annotations.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.Data.Tools.Sql.BatchParser.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Assessment.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.ConnectionInfo.dll
@@ -13,6 +14,7 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.RegisteredServers.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.Sdk.Sfc.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.SmoMetadataProvider.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.SqlParser.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.SqlScriptPublishModel.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.XEvent.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.XEventDbScoped.dll
@@ -23,7 +25,6 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Smo.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.SmoExtended.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.SqlEnum.dll
-C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.SqlParser.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\mscorlib.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll

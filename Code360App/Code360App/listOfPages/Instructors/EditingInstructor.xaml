@@ -7,9 +7,28 @@
              x:Class="Code360App.listOfPages.EditingInstructor">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <SearchBar Placeholder="Get Course by Id" x:Name="SearchItem"  TextChanged="SearchBar_TextChanged"/>
+            <StackLayout Margin="10,30,10,0">
+                <Entry Placeholder="Title"  PlaceholderColor="White" x:Name="title" />
+                <Entry Placeholder="InstructorsId" x:Name="instructorsId" Keyboard="Numeric" PlaceholderColor="White" />
+                <Entry Placeholder="Duration" x:Name="duration"  PlaceholderColor="White"/>
+                <Entry Placeholder="Cost"  x:Name="cost"  PlaceholderColor="White" />
+            </StackLayout>
+            <Button Text="Save"  BackgroundColor="BlueViolet"  CornerRadius="20"  Margin="10,90,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black" />
+            <ListView HasUnevenRows="True" x:Name="instructor">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding  Name}"/>
+                                <Label Text="{Binding  Email}"/>
+                                <Label Text="{Binding  Password}"/>
+                                <Label Text="{Binding  Id}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

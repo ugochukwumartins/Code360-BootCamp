@@ -13,6 +13,7 @@ namespace Code360App.listOfPages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewInstructor : ContentPage
     {
+        int increase = 1;
         public NewInstructor()
         {
             InitializeComponent();
@@ -20,11 +21,15 @@ namespace Code360App.listOfPages
 
         private void Save_Clicked(object sender, EventArgs e)
         {
+            increase++;
             var instructor = new NewInstructors
             {
                 Email = email.Text,
                 Name = name.Text,
-                Password = password.Text
+                Password = password.Text,
+                 Id= increase
+
+
             };
             MessagingCenter.Send(this, "Send", instructor);
             Navigation.PopModalAsync();

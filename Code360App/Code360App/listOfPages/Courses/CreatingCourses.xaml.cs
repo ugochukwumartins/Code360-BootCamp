@@ -15,7 +15,7 @@ namespace Code360App.listOfPages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CreatingCourses : ContentPage
     {
-     
+        int increase = 1;
         public CreatingCourses()
         {
             InitializeComponent();
@@ -24,13 +24,15 @@ namespace Code360App.listOfPages
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            increase++;
 
             var listOfAllcoursesMain = new ListOfAllcoursesMain
             {
                 Cost = cost.Text,
                 Duration = duration.Text,
-                InstructorsId =Convert.ToInt32( instructorsId.Text),
-                Titles = title.Text
+                InstructorsId = Convert.ToInt32(instructorsId.Text),
+                Titles = title.Text,
+                Id = increase
             };
            
             MessagingCenter.Send(this, "AddItem", listOfAllcoursesMain);

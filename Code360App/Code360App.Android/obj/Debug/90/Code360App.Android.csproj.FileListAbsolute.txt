@@ -67,7 +67,6 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Microsoft.SqlServer.Smo.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Microsoft.SqlServer.SmoExtended.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Microsoft.SqlServer.SqlEnum.dll
-C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Microsoft.SqlServer.SqlParser.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Mono.Android.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\mscorlib.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Newtonsoft.Json.dll
@@ -171,7 +170,6 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Smo.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.SmoExtended.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.SqlEnum.dll
-C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.SqlParser.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Mono.Security.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\mscorlib.dll
@@ -625,3 +623,7 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Behaviors.pdb
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\System.ObjectModel.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\XamarinFastEntry.Behaviors.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\JetBrains.Annotations.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\linksrc\Microsoft.SqlServer.Management.SqlParser.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\JetBrains.Annotations.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.Android\obj\Debug\90\android\assets\Microsoft.SqlServer.Management.SqlParser.dll

@@ -36,7 +36,7 @@
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
         }
       },
-      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap03": {
+      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap07": {
         "type": "package",
         "build": {
           "build/JetBrains.ReSharper.CommandLineTools.targets": {}
@@ -217,7 +217,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0-preview2.19523.17": {
+      "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -271,7 +271,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.4.0.936621-pre1": {
+      "Xamarin.Forms/4.4.0.991210-pre2": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -394,6 +394,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/4.4.0.991210-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
       "XamarinFastEntry.Behaviors/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -418,11 +439,12 @@
           "Newtonsoft.Json": "12.0.3",
           "Plugin.RestClient": "1.1.0",
           "SQLite.Net-PCL": "3.1.1",
-          "System.ComponentModel.Annotations": "4.7.0-preview2.19523.17",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.ObjectModel": "4.3.0",
           "Xam.Plugins.Forms.ImageCircle": "3.1.1.1-beta",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.936621-pre1",
+          "Xamarin.Forms": "4.4.0.991210-pre2",
+          "Xamarin.Forms.Visual.Material": "4.4.0.991210-pre2",
           "XamarinFastEntry.Behaviors": "1.1.1",
           "sqlite-net-pcl": "1.6.292"
         },
@@ -469,7 +491,7 @@
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
         }
       },
-      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap03": {
+      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap07": {
         "type": "package",
         "build": {
           "build/JetBrains.ReSharper.CommandLineTools.targets": {}
@@ -640,7 +662,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0-preview2.19523.17": {
+      "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -694,7 +716,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.4.0.936621-pre1": {
+      "Xamarin.Forms/4.4.0.991210-pre2": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -817,6 +839,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/4.4.0.991210-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
       "XamarinFastEntry.Behaviors/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -841,11 +884,12 @@
           "Newtonsoft.Json": "12.0.3",
           "Plugin.RestClient": "1.1.0",
           "SQLite.Net-PCL": "3.1.1",
-          "System.ComponentModel.Annotations": "4.7.0-preview2.19523.17",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.ObjectModel": "4.3.0",
           "Xam.Plugins.Forms.ImageCircle": "3.1.1.1-beta",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.936621-pre1",
+          "Xamarin.Forms": "4.4.0.991210-pre2",
+          "Xamarin.Forms.Visual.Material": "4.4.0.991210-pre2",
           "XamarinFastEntry.Behaviors": "1.1.1",
           "sqlite-net-pcl": "1.6.292"
         },
@@ -892,7 +936,7 @@
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
         }
       },
-      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap03": {
+      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap07": {
         "type": "package",
         "build": {
           "build/JetBrains.ReSharper.CommandLineTools.targets": {}
@@ -1066,7 +1110,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0-preview2.19523.17": {
+      "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -1120,7 +1164,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.4.0.936621-pre1": {
+      "Xamarin.Forms/4.4.0.991210-pre2": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -1243,6 +1287,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/4.4.0.991210-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
       "XamarinFastEntry.Behaviors/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -1267,11 +1332,12 @@
           "Newtonsoft.Json": "12.0.3",
           "Plugin.RestClient": "1.1.0",
           "SQLite.Net-PCL": "3.1.1",
-          "System.ComponentModel.Annotations": "4.7.0-preview2.19523.17",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.ObjectModel": "4.3.0",
           "Xam.Plugins.Forms.ImageCircle": "3.1.1.1-beta",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.936621-pre1",
+          "Xamarin.Forms": "4.4.0.991210-pre2",
+          "Xamarin.Forms.Visual.Material": "4.4.0.991210-pre2",
           "XamarinFastEntry.Behaviors": "1.1.1",
           "sqlite-net-pcl": "1.6.292"
         },
@@ -1318,7 +1384,7 @@
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
         }
       },
-      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap03": {
+      "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap07": {
         "type": "package",
         "build": {
           "build/JetBrains.ReSharper.CommandLineTools.targets": {}
@@ -1492,7 +1558,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0-preview2.19523.17": {
+      "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -1546,7 +1612,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.4.0.936621-pre1": {
+      "Xamarin.Forms/4.4.0.991210-pre2": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -1669,6 +1735,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/4.4.0.991210-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
       "XamarinFastEntry.Behaviors/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -1693,11 +1780,12 @@
           "Newtonsoft.Json": "12.0.3",
           "Plugin.RestClient": "1.1.0",
           "SQLite.Net-PCL": "3.1.1",
-          "System.ComponentModel.Annotations": "4.7.0-preview2.19523.17",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.ObjectModel": "4.3.0",
           "Xam.Plugins.Forms.ImageCircle": "3.1.1.1-beta",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.936621-pre1",
+          "Xamarin.Forms": "4.4.0.991210-pre2",
+          "Xamarin.Forms.Visual.Material": "4.4.0.991210-pre2",
           "XamarinFastEntry.Behaviors": "1.1.1",
           "sqlite-net-pcl": "1.6.292"
         },
@@ -1759,16 +1847,16 @@
         "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
       ]
     },
-    "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap03": {
-      "sha512": "NnikEX3wzPthCdfZ2yafYPfudjLJTKdghmG/YALIkdfCB+X4XIHXtMZPZxUkif4017RaMg2zPLX1EToq8YiOJg==",
+    "JetBrains.ReSharper.CommandLineTools/2019.3.0-eap07": {
+      "sha512": "fobEZgY5o1TyurFskH98T0X/4tbgSh+a7r75vn5EXyrWPafdwTa+61D6aM7MqXTtRxvafWH5LAAyazWlX+A/qQ==",
       "type": "package",
-      "path": "jetbrains.resharper.commandlinetools/2019.3.0-eap03",
+      "path": "jetbrains.resharper.commandlinetools/2019.3.0-eap07",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/JetBrains.ReSharper.CommandLineTools.targets",
-        "jetbrains.resharper.commandlinetools.2019.3.0-eap03.nupkg.sha512",
+        "jetbrains.resharper.commandlinetools.2019.3.0-eap07.nupkg.sha512",
         "jetbrains.resharper.commandlinetools.nuspec",
         "tools/Annotations/net20/JetBrains.Annotations.dll",
         "tools/Annotations/netstandard1.0/JetBrains.Annotations.dll",
@@ -2617,7 +2705,6 @@
         "tools/ExternalAnnotations/WinRT/Windows/I18n.xml",
         "tools/ExternalAnnotations/WinRT/Windows/Windows.Nullness.Generated.xml",
         "tools/ExternalAnnotations/WinRT/Windows/Windows.Xaml.xml",
-        "tools/Humanizer.dll",
         "tools/ICSharpCode.SharpZipLib.dll",
         "tools/ICSharpCode.SharpZipLib.xml",
         "tools/InspectCode.MsBuild.Targets",
@@ -2644,7 +2731,6 @@
         "tools/JetBrains.Decompiler.Core.xml",
         "tools/JetBrains.ExternalAnnotations.JetMetadata.sstg",
         "tools/JetBrains.Lifetimes.dll",
-        "tools/JetBrains.Lifetimes.pdb",
         "tools/JetBrains.Lifetimes.xml",
         "tools/JetBrains.MSBuild.Logger.Api.dll",
         "tools/JetBrains.MSBuild.Logger.Api.xml",
@@ -2726,7 +2812,6 @@
         "tools/JetBrains.Psi.Features.Web.Core.JetMetadata.sstg",
         "tools/JetBrains.Psi.Features.src.JetMetadata.sstg",
         "tools/JetBrains.RdFramework.dll",
-        "tools/JetBrains.RdFramework.pdb",
         "tools/JetBrains.RdFramework.xml",
         "tools/JetBrains.ReSharper.Daemon.BuildScripts.dll",
         "tools/JetBrains.ReSharper.Daemon.BuildScripts.xml",
@@ -2959,8 +3044,6 @@
         "tools/Microsoft.CodeAnalysis.dll",
         "tools/Microsoft.Deployment.Compression.Cab.dll",
         "tools/Microsoft.Deployment.Compression.dll",
-        "tools/Microsoft.DiaSymReader.PortablePdb.dll",
-        "tools/Microsoft.DiaSymReader.dll",
         "tools/Microsoft.Owin.FileSystems.XML",
         "tools/Microsoft.Owin.FileSystems.dll",
         "tools/Microsoft.Owin.Host.HttpListener.dll",
@@ -3035,28 +3118,18 @@
         "tools/System.Buffers.dll",
         "tools/System.Buffers.xml",
         "tools/System.Collections.Immutable.dll",
-        "tools/System.Composition.AttributedModel.dll",
-        "tools/System.Composition.Hosting.dll",
-        "tools/System.Composition.Runtime.dll",
-        "tools/System.Composition.TypedParts.dll",
-        "tools/System.IO.FileSystem.Primitives.dll",
-        "tools/System.IO.FileSystem.dll",
+        "tools/System.Collections.Immutable.xml",
         "tools/System.Memory.dll",
         "tools/System.Memory.xml",
         "tools/System.Numerics.Vectors.dll",
         "tools/System.Numerics.Vectors.xml",
         "tools/System.Reflection.Metadata.dll",
+        "tools/System.Reflection.Metadata.xml",
         "tools/System.Runtime.CompilerServices.Unsafe.dll",
         "tools/System.Runtime.CompilerServices.Unsafe.xml",
         "tools/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "tools/System.Security.Cryptography.Algorithms.dll",
-        "tools/System.Security.Cryptography.Primitives.dll",
-        "tools/System.Text.Encoding.CodePages.dll",
-        "tools/System.Threading.Tasks.Extensions.dll",
-        "tools/System.Threading.Thread.dll",
         "tools/System.ValueTuple.dll",
         "tools/System.ValueTuple.xml",
-        "tools/System.Xml.XPath.XDocument.dll",
         "tools/TokenGenerator.exe",
         "tools/TokenGenerator.xml",
         "tools/TsLibGen.dll",
@@ -3559,10 +3632,10 @@
         "sqlitepclraw.provider.sqlite3.ios_unified.nuspec"
       ]
     },
-    "System.ComponentModel.Annotations/4.7.0-preview2.19523.17": {
-      "sha512": "s0Pik+v8RvAAvAleM8LmnUWrZAbx18k/M9BVuDy6rNsQPuAKmt7KavE3t/Q8+neu2BsO4vPQYrzbqrGHB3rPbw==",
+    "System.ComponentModel.Annotations/4.7.0": {
+      "sha512": "0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
       "type": "package",
-      "path": "system.componentmodel.annotations/4.7.0-preview2.19523.17",
+      "path": "system.componentmodel.annotations/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3642,7 +3715,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.componentmodel.annotations.4.7.0-preview2.19523.17.nupkg.sha512",
+        "system.componentmodel.annotations.4.7.0.nupkg.sha512",
         "system.componentmodel.annotations.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -3850,10 +3923,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.4.0.936621-pre1": {
-      "sha512": "JSDV+dHk/gTurk2VVFeNwFGeCE0/zfh/JyA04d/z51//ki2iCza8Qxbw1qTMcq4NL7wiM3zKwBaRF7Ag7dNZWg==",
+    "Xamarin.Forms/4.4.0.991210-pre2": {
+      "sha512": "eRLbF7xisYzXrjKXzrHC2C1TV7jiXLeIoUWo2WDAkjUCf0vg032zZQ7y0E+CiMNP8C14rmcaKl/DMPB+U+JkRQ==",
       "type": "package",
-      "path": "xamarin.forms/4.4.0.936621-pre1",
+      "path": "xamarin.forms/4.4.0.991210-pre2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4083,6 +4156,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PickerStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
@@ -4094,8 +4168,41 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.4.0.936621-pre1.nupkg.sha512",
+        "xamarin.forms.4.4.0.991210-pre2.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Visual.Material/4.4.0.991210-pre2": {
+      "sha512": "C83tLPmZBFHfPhlG9CUe11vp/g/6jPGJEWsfdfrwWEbzQYiWk6ypbVHMXXcqZNFaPIrcdZa5DqZ8Y8YiYvNqNQ==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/4.4.0.991210-pre2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "lib/tizen40/Xamarin.Forms.Material.dll",
+        "lib/tizen40/Xamarin.Forms.Material.pdb",
+        "xamarin.forms.visual.material.4.4.0.991210-pre2.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
+      ]
+    },
+    "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+      "sha512": "EbQRS4an2f8O6TscQyhzqtbajCOZRjVgWO9gsIsieukJrAzAXDrXuk4FKT5enjjlZUsmVqBcxKCCw+PPzr4GAw==",
+      "type": "package",
+      "path": "xamarin.ios.materialcomponents/72.2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/Xamarin.iOS/MaterialComponents.dll",
+        "xamarin.ios.materialcomponents.72.2.0.1.nupkg.sha512",
+        "xamarin.ios.materialcomponents.nuspec"
       ]
     },
     "XamarinFastEntry.Behaviors/1.1.1": {
@@ -4120,7 +4227,7 @@
     "Xamarin.iOS,Version=v1.0": [
       "Code360App >= 1.0.0",
       "JetBrains.Annotations >= 2019.1.3",
-      "JetBrains.ReSharper.CommandLineTools >= 2019.3.0-eap03",
+      "JetBrains.ReSharper.CommandLineTools >= 2019.3.0-eap07",
       "Microsoft.Net.Http >= 2.2.29",
       "Microsoft.SqlServer.SqlManagementObjects >= 150.18208.0",
       "Newtonsoft.Json >= 12.0.3",
@@ -4128,7 +4235,8 @@
       "SQLite.Net-PCL >= 3.1.1",
       "Xam.Plugins.Forms.ImageCircle >= 3.1.1.1-beta",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.4.0.936621-pre1",
+      "Xamarin.Forms >= 4.4.0.991210-pre2",
+      "Xamarin.Forms.Visual.Material >= 4.4.0.991210-pre2",
       "sqlite-net-pcl >= 1.6.292"
     ]
   },
@@ -4182,7 +4290,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2019.3.0-eap03, )"
+            "version": "[2019.3.0-eap07, )"
           },
           "Microsoft.Net.Http": {
             "target": "Package",
@@ -4214,7 +4322,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.4.0.936621-pre1, )"
+            "version": "[4.4.0.991210-pre2, )"
+          },
+          "Xamarin.Forms.Visual.Material": {
+            "target": "Package",
+            "version": "[4.4.0.991210-pre2, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

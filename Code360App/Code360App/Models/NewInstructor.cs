@@ -10,7 +10,6 @@ namespace Code360App.Models
     {
 
         [JsonProperty("id")]
-        [AutoIncrement]
         public int Id { get; set; }
 
         [JsonProperty("name")]
