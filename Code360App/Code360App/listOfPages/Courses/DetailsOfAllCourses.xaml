@@ -16,6 +16,7 @@
                                 <Label Text="{Binding  Cost}"/>
                                 <Label Text="{Binding  Duration}"/>
                                 <Label Text="{Binding  InstructorsId}"/>
+                                <Label Text="{Binding   Id}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

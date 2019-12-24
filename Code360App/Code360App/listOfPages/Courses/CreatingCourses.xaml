@@ -13,6 +13,7 @@
                 <Entry Placeholder="InstructorsId" x:Name="instructorsId" Keyboard="Numeric" PlaceholderColor="White" />
                 <Entry Placeholder="Duration" x:Name="duration"  PlaceholderColor="White"/>
                 <Entry Placeholder="Cost"  x:Name="cost"  PlaceholderColor="White" />
+                <Entry Placeholder="id"  x:Name="ids"  PlaceholderColor="Blue" Keyboard="Numeric" />
             </StackLayout>
             <StackLayout>
                 <Button Text="Save"  BackgroundColor="BlueViolet"  CornerRadius="20"  Margin="10,90,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black" Clicked="Button_Clicked"/>

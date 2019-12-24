@@ -11,7 +11,7 @@ namespace Code360App.Model_api
     {
       
 
-     //   [AutoIncrement]
+             [PrimaryKey]
         public int Id { get; set; }
 
       

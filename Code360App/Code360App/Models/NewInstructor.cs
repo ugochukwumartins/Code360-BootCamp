@@ -9,7 +9,7 @@ namespace Code360App.Models
    public class NewInstructors
     {
 
-        [JsonProperty("id")]
+        [JsonProperty("id"), PrimaryKey]
         public int Id { get; set; }
 
         [JsonProperty("name")]

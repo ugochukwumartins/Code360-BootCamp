@@ -9,22 +9,28 @@
     <ContentPage.Content>
         <StackLayout>
             <SearchBar Placeholder="Get Course by Id" x:Name="SearchItem"  TextChanged="SearchBar_TextChanged"/>
+            <Button x:Name="Edits" Text="Edit" IsVisible="False" Clicked="Edits_Clicked"/>
+        
             <StackLayout Margin="10,30,10,0">
                 <Entry Placeholder="Title"  PlaceholderColor="White" x:Name="title" />
                 <Entry Placeholder="InstructorsId" x:Name="instructorsId" Keyboard="Numeric" PlaceholderColor="White" />
                 <Entry Placeholder="Duration" x:Name="duration"  PlaceholderColor="White"/>
                 <Entry Placeholder="Cost"  x:Name="cost"  PlaceholderColor="White" />
+                <Entry Placeholder="Id"  x:Name="ids"  PlaceholderColor="White"  IsReadOnly="True"/>
             </StackLayout>
-            <Button Text="Save"  BackgroundColor="BlueViolet"  CornerRadius="20"  Margin="10,90,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black" />
-            <ListView HasUnevenRows="True" x:Name="detailslist">
+            <Button Text="Save"  BackgroundColor="BlueViolet"  CornerRadius="20"  Margin="10,90,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black" Clicked="Button_Clicked" />
+            <ListView HasUnevenRows="True" x:Name="detailslist" ItemSelected="detailslist_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <StackLayout Orientation="Vertical">
                             <StackLayout>
                                 <Label Text="{Binding  Titles}"/>
                                 <Label Text="{Binding  Cost}"/>
                                 <Label Text="{Binding  Duration}"/>
                                 <Label Text="{Binding  InstructorsId}"/>
+                            </StackLayout>
+                              
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

@@ -13,16 +13,18 @@ namespace Code360App.Models
   
    public class GetAllQuestionsClass
     {
+
         private int id;
         private string option1;
         private string option2;
         private string option3;
         private string option4;
+        private string questions;
         private string answer;
 
 
 
-      [JsonProperty("id")]
+      [JsonProperty("id"), PrimaryKey]
         public int Id {
             get { return id; }
             set { id= value; }
@@ -62,6 +64,11 @@ namespace Code360App.Models
             set { answer = value; }
         }
 
-
+        [JsonProperty("questions")]
+        public string Questions
+        {
+            get { return questions; }
+            set { questions = value; }
+        }
     }
 }

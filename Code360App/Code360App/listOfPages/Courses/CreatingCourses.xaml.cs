@@ -32,7 +32,7 @@ namespace Code360App.listOfPages
                 Duration = duration.Text,
                 InstructorsId = Convert.ToInt32(instructorsId.Text),
                 Titles = title.Text,
-                Id = increase
+                Id = Convert.ToInt32(ids.Text)
             };
            
             MessagingCenter.Send(this, "AddItem", listOfAllcoursesMain);

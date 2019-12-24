@@ -54,23 +54,29 @@ namespace Code360App.listOfPages
 
 
             var Add= new GetAllQuestionsClass (){ Option1 = QuestionA.Text, Option2 = QuestionB.Text, Option3 = QuestionC.Text,
-                Option4 = QuestionD.Text, Answer = Answer.Text, Id = increase
+                Option4 = QuestionD.Text, Answer = Answer.Text, Id = Convert.ToInt32( idss.Text), Questions= questions.Text
             };
-           
-         
+
+
             //using (SQLiteConnection datab = new SQLiteConnection(App.FilePath))
             //{
             //    datab.CreateTable<GetAllQuestionsClass>();
-             
-               
+
+
             //   int x=     datab.Insert(Add);
             //    detail.Add(Add);
-               
-            //}
-           
-            MessagingCenter.Send(this,"Good", Add);
-            Navigation.PopModalAsync();
 
+            //}
+            try
+            {
+
+                MessagingCenter.Send(this, "Good", Add);
+                Navigation.PopModalAsync();
+            }
+            catch
+            {
+                
+            };
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)

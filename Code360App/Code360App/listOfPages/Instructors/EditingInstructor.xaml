@@ -4,18 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Code360App.listOfPages.EditingInstructor">
+             x:Class="Code360App.listOfPages.EditingInstructor"
+             BackgroundImageSource="bg.jpeg">
     <ContentPage.Content>
         <StackLayout>
             <SearchBar Placeholder="Get Course by Id" x:Name="SearchItem"  TextChanged="SearchBar_TextChanged"/>
             <StackLayout Margin="10,30,10,0">
-                <Entry Placeholder="Title"  PlaceholderColor="White" x:Name="title" />
-                <Entry Placeholder="InstructorsId" x:Name="instructorsId" Keyboard="Numeric" PlaceholderColor="White" />
-                <Entry Placeholder="Duration" x:Name="duration"  PlaceholderColor="White"/>
-                <Entry Placeholder="Cost"  x:Name="cost"  PlaceholderColor="White" />
+                <Entry Placeholder=" Name"  PlaceholderColor="White" x:Name="name" />
+                <Entry Placeholder=" Email" x:Name="email"  PlaceholderColor="White" />
+                <Entry Placeholder="Password" x:Name="password"  PlaceholderColor="White" IsPassword="True"/>
+                <Entry Placeholder="id"  x:Name="ids"  PlaceholderColor="Blue" Keyboard="Numeric" IsReadOnly="True" />
             </StackLayout>
-            <Button Text="Save"  BackgroundColor="BlueViolet"  CornerRadius="20"  Margin="10,90,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black" />
-            <ListView HasUnevenRows="True" x:Name="instructor">
+            <Button Text="Save"  BackgroundColor="BlueViolet"  CornerRadius="20"  Margin="10,90,10,0"  TextColor="White" FontFamily="FiraSans-Black.ttf#FiraSans-Black"  Clicked="Button_Clicked"/>
+            <ListView HasUnevenRows="True" x:Name="instructor" ItemSelected="instructor_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -23,7 +24,6 @@
                                 <Label Text="{Binding  Name}"/>
                                 <Label Text="{Binding  Email}"/>
                                 <Label Text="{Binding  Password}"/>
-                                <Label Text="{Binding  Id}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

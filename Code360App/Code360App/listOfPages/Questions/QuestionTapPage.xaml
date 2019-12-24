@@ -8,7 +8,7 @@
              xmlns:local="clr-namespace:Code360App.listOfPages">
 
 
-    <local:GetAllQuestions Title="AllQuestions"/>
+    <!--<local:GetAllQuestions Title="AllQuestions"/>-->
 
     <local:CreateQuestionPage Title="CreatQuestion"/>
 

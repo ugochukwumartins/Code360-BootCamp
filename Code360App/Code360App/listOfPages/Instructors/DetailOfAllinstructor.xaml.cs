@@ -21,31 +21,31 @@ namespace Code360App.listOfPages
         {
             InitializeComponent();
 
-            BindingContext = new NewInstructor();
+            //BindingContext = new NewInstructor();
 
-            MessagingCenter.Subscribe<NewInstructor,NewInstructors>(this, "Send", (s, a) =>
-             {
-                 c = a;
-                 using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
-                 {
-                     database.CreateTable<NewInstructors>();
-                     int x = database.Insert(c);
-                     loginModels.Add(c);
-                 }
+            //MessagingCenter.Subscribe<NewInstructor,NewInstructors>(this, "Send", (s, a) =>
+            // {
+            //     c = a;
+            //     using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
+            //     {
+            //         database.CreateTable<NewInstructors>();
+            //         int x = database.Insert(c);
+            //         loginModels.Add(c);
+            //     }
                
                
-             });
+            // });
         }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
-            {
-                database.CreateTable<NewInstructors>();
-                var data = database.Table<NewInstructors>().ToList();
-                loginModels = new ObservableCollection<NewInstructors>(data);
-                instructor.ItemsSource = loginModels;
-            };
-        }
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
+        //    {
+        //        database.CreateTable<NewInstructors>();
+        //        var data = database.Table<NewInstructors>().ToList();
+        //        loginModels = new ObservableCollection<NewInstructors>(data);
+        //        instructor.ItemsSource = loginModels;
+        //    };
+        //}
     }
 }

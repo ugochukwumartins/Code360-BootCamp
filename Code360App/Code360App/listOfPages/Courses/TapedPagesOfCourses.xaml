@@ -9,7 +9,7 @@
 
 
 
-    <local:DetailsOfAllCourses Title="Courses view"/>
+    <!--<local:DetailsOfAllCourses Title="Courses view"/>-->
 
     <local:CreatingCourses Title="Creating Courses"/>
     

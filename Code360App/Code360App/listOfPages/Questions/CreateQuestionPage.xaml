@@ -9,15 +9,17 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                <Editor Placeholder="Add Question" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
+                <Editor Placeholder="Add Question" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White" x:Name="questions"/>
             </StackLayout>
             <Entry x:Name="QuestionA" Placeholder="OptionA" PlaceholderColor="White" Margin="20,0,20,0" TextColor="White"/>
             <Entry x:Name="QuestionB" Placeholder="OptionB" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
             <Entry x:Name="QuestionC" Placeholder="OptionC" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
             <Entry x:Name="QuestionD" Placeholder="OptionD" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
             <Entry x:Name="Answer" Placeholder="Answer" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="idss" Placeholder="Id" Margin="20,0,20,0" TextColor="White" PlaceholderColor="White" Keyboard="Numeric"/>
+            
 
-
+          
             <!--<Button Text="Add" Clicked="Add_Clicked"/>
             <Button Text="Delete" Clicked="Delete_Clicked_1"/>-->
             <Button Text="ADD" Clicked="Button_Clicked"  Margin="20,0,20,0" TextColor="White" CornerRadius="20" BackgroundColor="DarkBlue" BorderColor="Blue"/>

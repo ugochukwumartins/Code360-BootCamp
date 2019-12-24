@@ -52,5 +52,27 @@ namespace Code360App.listOfPages
                 instructor.ItemsSource = loginModels;
             };
         }
+
+        private void instructor_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+          var c=  e.SelectedItem as NewInstructors;
+            name.Text = c.Name;
+           email.Text = c.Email;
+           password.Text = c.Password;
+         ids.Text = Convert.ToString(c.Id);
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            NewInstructors bm= loginModels.FirstOrDefault(c => c.Id == Convert.ToInt32(ids.Text));
+            bm.Name = name.Text;
+            bm.Email = email.Text;
+            bm.Password = password.Text;
+         
+            var database = new SQLiteConnection(App.FilePath);
+            database.Update(bm);
+            loginModels.Add(bm);
+            instructor.ItemsSource = loginModels;
+        }
     }
 }

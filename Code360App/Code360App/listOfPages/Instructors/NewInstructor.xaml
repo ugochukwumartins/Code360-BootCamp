@@ -13,6 +13,7 @@
             <Entry Placeholder="Name" x:Name="name" PlaceholderColor="White" />
             <Entry Placeholder="Email" x:Name="email" PlaceholderColor="White" Keyboard="Email" />
             <Entry Placeholder="Password" x:Name="password" PlaceholderColor="White" IsPassword="True"/>
+              <Entry Placeholder="id"  x:Name="ids"  PlaceholderColor="Blue" Keyboard="Numeric" />
             </StackLayout>
             <StackLayout Margin="10,90,10,0">
             <Button Text="Save" Clicked="Save_Clicked" CornerRadius="20"  BackgroundColor="BlueViolet"/>

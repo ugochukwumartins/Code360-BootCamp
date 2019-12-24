@@ -7,7 +7,7 @@
              x:Class="Code360App.listOfPages.InstructorTapedPage"
               xmlns:local="clr-namespace:Code360App.listOfPages">
 
-    <local:DetailOfAllinstructor Title="ListOfinstructors"/>
+    <!--<local:DetailOfAllinstructor Title="ListOfinstructors"/>-->
 
     <local:NewInstructor Title="NewInstructor"/>
 

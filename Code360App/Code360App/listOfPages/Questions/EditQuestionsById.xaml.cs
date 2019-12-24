@@ -52,5 +52,26 @@ namespace Code360App.listOfPages
                 lists.ItemsSource = detail;
             };
         }
+
+        private void lists_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var db = e.SelectedItem as GetAllQuestionsClass;
+           Option1.Text = db.Option1;   Option2.Text = db.Option2;  Option3.Text = db.Option3;
+            Option4.Text = db.Option4;  answer.Text = db.Answer;   ids.Text = Convert.ToString(db.Id);    question.Text = db.Questions;
+            
+    }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            GetAllQuestionsClass bm = detail.FirstOrDefault(c => c.Id == Convert.ToInt32(ids.Text));
+
+           bm.Option1 = Option1.Text; bm.Option2= Option2.Text; bm.Option3= Option3.Text;
+             bm.Option4 = Option4.Text; bm.Answer= answer.Text; bm.Id= Convert.ToInt32( ids.Text); bm.Questions= question.Text;
+
+            var dbsource = new SQLiteConnection(App.FilePath);
+            dbsource.Update(bm);
+            detail.Add(bm);
+            lists.ItemsSource = detail;
+        }
     }
 }

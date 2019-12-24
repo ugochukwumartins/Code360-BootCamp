@@ -21,34 +21,34 @@ namespace Code360App.listOfPages
         public DetailsOfAllCourses()
         {
             InitializeComponent();
-            BindingContext = new CreatingCourses();
+          //  BindingContext = new CreatingCourses();
 
-            MessagingCenter.Subscribe<CreatingCourses, ListOfAllcoursesMain>(this, "AddItem", (s, a) =>
-            {
-             //   c = a;
-                using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
-                {
-                    database.CreateTable<ListOfAllcoursesMain>();
-                    int x = database.Insert(a);
-                    loginModels.Add(a);
-                  //  detailslist.ItemsSource = loginModels;
-                }
-            });
+            //MessagingCenter.Subscribe<CreatingCourses, ListOfAllcoursesMain>(this, "AddItem", (s, a) =>
+            //{
+            // //   c = a;
+            //    using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
+            //    {
+            //        database.CreateTable<ListOfAllcoursesMain>();
+            //        int x = database.Insert(a);
+            //        loginModels.Add(a);
+            //      //  detailslist.ItemsSource = loginModels;
+            //    }
+            //});
          
 
 
         }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
-            {
-                database.CreateTable<ListOfAllcoursesMain>();
-                var data = database.Table<ListOfAllcoursesMain>().ToList();
-                loginModels = new ObservableCollection<ListOfAllcoursesMain>(data);
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
+        //    {
+        //        database.CreateTable<ListOfAllcoursesMain>();
+        //        var data = database.Table<ListOfAllcoursesMain>().ToList();
+        //        loginModels = new ObservableCollection<ListOfAllcoursesMain>(data);
                
-                detailslist.ItemsSource = loginModels;
-            };
-        }
+        //        detailslist.ItemsSource = loginModels;
+        //    };
+        //}
     }
 }

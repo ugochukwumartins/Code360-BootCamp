@@ -1,4 +1,4 @@
-﻿using Code360App.Model_api;
+﻿ using Code360App.Model_api;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -17,6 +17,7 @@ namespace Code360App.listOfPages
     {
      
         public ObservableCollection<ListOfAllcoursesMain> loginModels { get; set; } = new ObservableCollection<ListOfAllcoursesMain>();
+        SQLiteConnection bms;
 
       //  public ListOfAllcoursesMain c;
         public EdithCourse()
@@ -30,10 +31,13 @@ namespace Code360App.listOfPages
              
                 using (SQLiteConnection database = new SQLiteConnection(App.FilePath))
                 {
+                   
+                
                     database.CreateTable<ListOfAllcoursesMain>();
+                
                     int x = database.Insert(a);
                     loginModels.Add(a);
-                   // detailslist.ItemsSource = loginModels;
+                    detailslist.ItemsSource = loginModels;
                 }
             });
         }
@@ -57,6 +61,53 @@ namespace Code360App.listOfPages
             var keyword = SearchItem.Text;  
             var result = loginModels.Where(c=>Convert.ToString(c.Id).Contains(keyword));
             detailslist.ItemsSource = result;
+        }
+
+        private void detailslist_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+         var c=   e.SelectedItem as ListOfAllcoursesMain;
+
+
+
+            
+                 title.Text = c.Titles;
+                instructorsId.Text = Convert.ToString(c.InstructorsId);
+                duration.Text = c.Duration;
+                cost.Text = c.Cost;
+            ids.Text = Convert.ToString(c.Id);
+          
+        }
+
+        private void Edits_Clicked(object sender, EventArgs e)
+        {
+            //var c= sender as ListOfAllcoursesMain;
+            //title.Text = c.Titles;
+            //instructorsId.Text = Convert.ToString(c.InstructorsId);
+            //duration.Text = c.Duration;
+            //cost.Text = c.Cost;
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            ListOfAllcoursesMain bm = loginModels.FirstOrDefault(c => c.Id == Convert.ToInt32(ids.Text));
+
+         bm.Titles=   title.Text;
+         bm.InstructorsId= Convert.ToInt32(instructorsId.Text);
+         bm.Duration=   duration.Text;
+          bm.Cost=  cost.Text;
+            var database = new SQLiteConnection(App.FilePath);
+
+
+
+            database.Update(bm);
+             
+              //  int x = database.Insert(bm);
+              
+              loginModels.Add(bm);
+                detailslist.ItemsSource = loginModels;
+            
+           // loginModels.Add(bm);
+           // detailslist.ItemsSource = loginModels;
         }
     }
 }

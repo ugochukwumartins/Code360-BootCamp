@@ -27,7 +27,7 @@ namespace Code360App.listOfPages
                 Email = email.Text,
                 Name = name.Text,
                 Password = password.Text,
-                 Id= increase
+                Id = Convert.ToInt32( ids.Text)
 
 
             };

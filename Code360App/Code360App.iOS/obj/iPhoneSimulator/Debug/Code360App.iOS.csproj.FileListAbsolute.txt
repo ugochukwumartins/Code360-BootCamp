@@ -92,3 +92,6 @@ C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimu
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\XamarinFastEntry.Behaviors.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\JetBrains.Annotations.dll
 C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\Microsoft.SqlServer.Management.SqlParser.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Material.dll
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Material.pdb
+C:\Users\samson\source\repos\Code360App\Code360App\Code360App.iOS\bin\iPhoneSimulator\Debug\MaterialComponents.dll
